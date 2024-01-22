@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="login()">
+    <script>
+       var agora = new Date()
+       var hora = agora.getHours()
+       
+        function login(){
+        if(hora < 12){
+            document.write('Bom Dia!')
+        } else if (hora <=18){
+            document.write("Boa Tarde!")
+        } else {
+            document.write("Boa Noite!")
+        }
+    }   
+    </script>
+</body>
+</html>
